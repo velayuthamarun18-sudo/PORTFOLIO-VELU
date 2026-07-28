@@ -40,6 +40,7 @@
             font-family: 'Fira Code', monospace;
         }
 
+        /* 3D Canvas Background */
         #bg-canvas {
             position: fixed;
             top: 0;
@@ -82,6 +83,7 @@
             background-clip: text;
         }
 
+        /* 3D Transform Utilities for Photo */
         .perspective-1000 {
             perspective: 1000px;
         }
@@ -244,14 +246,11 @@
                         <i class="fas fa-certificate text-yellow-500"></i> View Certificates
                     </a>
                 </div>
-                
                 <div class="mt-10 sm:mt-12 flex gap-4 sm:gap-5 justify-center md:justify-start items-center flex-wrap max-w-sm sm:max-w-none">
                     <span class="text-xs font-mono text-green-400 uppercase tracking-wider w-full md:w-auto text-center md:text-left mb-2 md:mb-0">Connect with me:</span>
                     <a href="mailto:velayuthamarun18@gmail.com" class="text-[#ea4335] hover:text-[#c5221f] hover:-translate-y-1 transition-all text-2xl drop-shadow-[0_0_5px_rgba(234,67,53,0.4)]" title="Send Email"><i class="fas fa-envelope"></i></a>
                     <a href="tel:+918825688339" class="text-[#10b981] hover:text-[#059669] hover:-translate-y-1 transition-all text-xl drop-shadow-[0_0_5px_rgba(16,185,129,0.4)]" title="Direct Call"><i class="fas fa-phone-alt"></i></a>
                     <a href="https://wa.me/918825688339" target="_blank" rel="noopener noreferrer" class="text-[#25d366] hover:text-[#128c7e] hover:-translate-y-1 transition-all text-2xl drop-shadow-[0_0_5px_rgba(37,211,102,0.4)]" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-                    
-                    <!-- Updated Social & Drive Links -->
                     <a href="https://drive.google.com/drive/folders/1Su_SlGDkDYP3Ta5B_ogz_X4l1OdLZpOH" target="_blank" rel="noopener noreferrer" class="text-[#FFC107] hover:text-[#FFB300] hover:-translate-y-1 transition-all text-2xl drop-shadow-[0_0_5px_rgba(255,193,7,0.4)]" title="Google Drive Portfolio"><i class="fab fa-google-drive"></i></a>
                     <a href="https://github.com/velayuthamarun18-sudo?tab=repositories" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-white hover:-translate-y-1 transition-all text-2xl drop-shadow-[0_0_5px_rgba(255,255,255,0.2)]" title="GitHub Profile"><i class="fab fa-github"></i></a>
                     <a href="https://www.linkedin.com/in/ᴠᴇʟᴀʏᴜᴛʜᴀᴍ-s-ᴛ-85b679380" target="_blank" rel="noopener noreferrer" class="text-[#0a66c2] hover:text-[#004182] hover:-translate-y-1 transition-all text-2xl drop-shadow-[0_0_5px_rgba(10,102,194,0.4)]" title="LinkedIn Connection"><i class="fab fa-linkedin"></i></a>
@@ -267,7 +266,6 @@
                     <div class="relative w-full h-full p-[4px] bg-gradient-to-br from-sky-400 via-violet-500 to-purple-600 shadow-[0_0_30px_rgba(14,165,233,0.4)] rounded-xl transition-all duration-500 group-hover:shadow-[0_0_60px_rgba(139,92,246,0.7)] transform-style-3d rotate-3d-hover">
                         <div class="w-full h-full bg-black rounded-lg overflow-hidden relative flex flex-col justify-center items-center">
                             
-                            <!-- Utilizing the provided image filename -->
                             <img id="profile-pic" class="w-full h-full object-cover object-top transition-transform duration-700 ease-out group-hover:scale-[1.08] opacity-0" alt="Velayutham ST Portrait">
                             
                             <div id="avatar-fallback" class="hidden absolute inset-0 flex flex-col items-center justify-center bg-[#050b14] p-6 text-center">
@@ -537,6 +535,9 @@
                                     <p class="text-xs text-gray-500">AB Technologies</p>
                                 </div>
                             </div>
+                            <a href="https://drive.google.com/drive/folders/1Su_SlGDkDYP3Ta5B_ogz_X4l1OdLZpOH" target="_blank" rel="noopener noreferrer" class="p-2.5 bg-slate-800/80 hover:bg-sky-600 rounded-xl text-gray-400 hover:text-white transition-all hover:scale-105 shrink-0" title="View Certificate">
+                                <i class="fas fa-external-link-alt text-sm"></i>
+                            </a>
                         </div>
                         
                         <div class="glass-card p-5 rounded-2xl flex items-center justify-between gap-4 group/cert hover:border-orange-500/50 transition-all">
@@ -549,6 +550,9 @@
                                     <p class="text-xs text-gray-500">NPTEL Course Completion Certificate</p>
                                 </div>
                             </div>
+                            <a href="https://drive.google.com/drive/folders/1Su_SlGDkDYP3Ta5B_ogz_X4l1OdLZpOH" target="_blank" rel="noopener noreferrer" class="p-2.5 bg-slate-800/80 hover:bg-orange-600 rounded-xl text-gray-400 hover:text-white transition-all hover:scale-105 shrink-0" title="View Certificate">
+                                <i class="fas fa-external-link-alt text-sm"></i>
+                            </a>
                         </div>
 
                         <div class="glass-card p-5 rounded-2xl flex items-center justify-between gap-4 group/cert hover:border-emerald-500/50 transition-all">
@@ -561,7 +565,21 @@
                                     <p class="text-xs text-gray-500">NPTEL Course Completion Certificate</p>
                                 </div>
                             </div>
+                            <a href="https://drive.google.com/drive/folders/1Su_SlGDkDYP3Ta5B_ogz_X4l1OdLZpOH" target="_blank" rel="noopener noreferrer" class="p-2.5 bg-slate-800/80 hover:bg-emerald-600 rounded-xl text-gray-400 hover:text-white transition-all hover:scale-105 shrink-0" title="View Certificate">
+                                <i class="fas fa-external-link-alt text-sm"></i>
+                            </a>
                         </div>
+                    </div>
+
+                    <!-- Directory CTA (Fixed for Mobile) -->
+                    <div class="p-5 sm:p-6 bg-gradient-to-tr from-[#111827] to-[#0a0f1d] border border-violet-500/20 rounded-2xl flex flex-col sm:flex-row items-center justify-between gap-4 shadow-[0_4px_25px_rgba(139,92,246,0.1)] text-center sm:text-left">
+                        <div class="w-full sm:w-auto">
+                            <h4 class="font-bold text-white text-sm sm:text-base">Verify All Certifications</h4>
+                            <p class="text-xs text-gray-400 mt-1">Access my cloud directory containing all original PDF certificates.</p>
+                        </div>
+                        <a href="https://drive.google.com/drive/folders/1Su_SlGDkDYP3Ta5B_ogz_X4l1OdLZpOH" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto justify-center px-5 py-3 sm:py-2.5 bg-gradient-to-r from-violet-600 to-sky-500 hover:from-violet-500 hover:to-sky-400 text-white font-semibold text-xs sm:text-sm rounded-xl transition-all shadow-[0_4px_15px_rgba(139,92,246,0.2)] flex items-center gap-2 transform hover:scale-[1.02] shimmer-btn">
+                            <i class="fab fa-google-drive text-base"></i> Open Google Drive Folder
+                        </a>
                     </div>
                 </div>
 
@@ -633,9 +651,9 @@
                 </a>
             </div>
             
-            <a href="mailto:velayuthamarun18@gmail.com" class="inline-flex items-center gap-2.5 bg-gradient-to-r from-sky-600 to-violet-600 hover:from-sky-500 hover:to-violet-500 text-white font-bold py-4 px-11 rounded-full transition-all transform hover:scale-105 shadow-[0_0_25px_rgba(139,92,246,0.35)] hover:shadow-[0_0_35px_rgba(139,92,246,0.55)] text-base sm:text-lg shimmer-btn mx-auto">
+            <button id="open-contact-modal" class="inline-flex items-center gap-2.5 bg-gradient-to-r from-sky-600 to-violet-600 hover:from-sky-500 hover:to-violet-500 text-white font-bold py-4 px-11 rounded-full transition-all transform hover:scale-105 shadow-[0_0_25px_rgba(139,92,246,0.35)] hover:shadow-[0_0_35px_rgba(139,92,246,0.55)] text-base sm:text-lg shimmer-btn mx-auto">
                 Send Direct Message <i class="far fa-paper-plane text-sm"></i>
-            </a>
+            </button>
         </div>
     </section>
 
@@ -657,11 +675,9 @@
             <div class="flex gap-4">
                 <a href="mailto:velayuthamarun18@gmail.com" class="text-[#ea4335] hover:text-[#f07066] hover:-translate-y-1 transition-all text-2xl drop-shadow-[0_0_5px_rgba(234,67,53,0.4)]" title="Email"><i class="fas fa-envelope"></i></a>
                 <a href="https://wa.me/918825688339" target="_blank" rel="noopener noreferrer" class="text-[#25d366] hover:text-[#4ade80] hover:-translate-y-1 transition-all text-2xl drop-shadow-[0_0_5px_rgba(37,211,102,0.4)]" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-                
-                <!-- Updated Social & Drive Links in Footer -->
-                <a href="https://drive.google.com/drive/folders/1Su_SlGDkDYP3Ta5B_ogz_X4l1OdLZpOH" target="_blank" rel="noopener noreferrer" class="text-[#FFC107] hover:text-[#FFB300] hover:-translate-y-1 transition-all text-2xl drop-shadow-[0_0_5px_rgba(255,193,7,0.4)]" title="Google Drive"><i class="fab fa-google-drive"></i></a>
                 <a href="https://github.com/velayuthamarun18-sudo?tab=repositories" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-white hover:-translate-y-1 transition-all text-2xl drop-shadow-[0_0_5px_rgba(255,255,255,0.2)]" title="GitHub"><i class="fab fa-github"></i></a>
                 <a href="https://www.linkedin.com/in/ᴠᴇʟᴀʏᴜᴛʜᴀᴍ-s-ᴛ-85b679380" target="_blank" rel="noopener noreferrer" class="text-[#0a66c2] hover:text-[#50a0f0] hover:-translate-y-1 transition-all text-2xl drop-shadow-[0_0_5px_rgba(10,102,194,0.4)]" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://drive.google.com/drive/folders/1Su_SlGDkDYP3Ta5B_ogz_X4l1OdLZpOH" target="_blank" rel="noopener noreferrer" class="text-[#FFC107] hover:text-[#FFB300] hover:-translate-y-1 transition-all text-2xl drop-shadow-[0_0_5px_rgba(255,193,7,0.4)]" title="Google Drive"><i class="fab fa-google-drive"></i></a>
             </div>
             <div>
                 <p class="text-gray-500 text-xs">
@@ -671,10 +687,79 @@
         </div>
     </footer>
 
+    <!-- Contact Options Modal -->
+    <div id="contact-modal" class="fixed inset-0 z-[100] hidden flex items-center justify-center opacity-0 transition-opacity duration-300">
+        <div class="absolute inset-0 bg-black/70 backdrop-blur-md close-modal cursor-pointer"></div>
+        <div class="relative w-full max-w-lg mx-4 glass-card p-6 sm:p-8 rounded-3xl shadow-2xl transform scale-95 transition-transform duration-300" id="modal-content">
+            <div class="flex justify-between items-center mb-6 border-b border-gray-800 pb-4">
+                <div>
+                    <h3 class="text-2xl font-bold text-white">Let's Connect</h3>
+                    <p class="text-sm text-gray-400 mt-1">Choose how you'd like to reach me</p>
+                </div>
+                <button class="close-modal text-gray-400 hover:text-white transition-colors w-10 h-10 rounded-full bg-slate-900/50 hover:bg-slate-800 flex items-center justify-center text-xl border border-gray-800"><i class="fas fa-times"></i></button>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <a href="https://wa.me/918825688339" target="_blank" class="flex flex-col items-center text-center p-5 bg-slate-900/80 hover:bg-[#25d366]/10 border border-slate-800 hover:border-[#25d366]/50 rounded-2xl transition-all group">
+                    <div class="w-12 h-12 rounded-full bg-slate-800 flex items-center justify-center text-[#25d366] text-2xl mb-3 group-hover:scale-110 transition-transform shadow-[0_0_15px_rgba(37,211,102,0.2)]"><i class="fab fa-whatsapp"></i></div>
+                    <h4 class="text-white font-bold text-base">WhatsApp</h4>
+                    <p class="text-gray-400 text-xs mt-1">Direct chat</p>
+                </a>
+                
+                <a href="mailto:velayuthamarun18@gmail.com" class="flex flex-col items-center text-center p-5 bg-slate-900/80 hover:bg-[#ea4335]/10 border border-slate-800 hover:border-[#ea4335]/50 rounded-2xl transition-all group">
+                    <div class="w-12 h-12 rounded-full bg-slate-800 flex items-center justify-center text-[#ea4335] text-2xl mb-3 group-hover:scale-110 transition-transform shadow-[0_0_15px_rgba(234,67,53,0.2)]"><i class="fas fa-envelope"></i></div>
+                    <h4 class="text-white font-bold text-base">E-mail</h4>
+                    <p class="text-gray-400 text-xs mt-1">Formal inquiries</p>
+                </a>
+                
+                <a href="https://www.linkedin.com/in/ᴠᴇʟᴀʏᴜᴛʜᴀᴍ-s-ᴛ-85b679380" target="_blank" class="flex flex-col items-center text-center p-5 bg-slate-900/80 hover:bg-[#0a66c2]/10 border border-slate-800 hover:border-[#0a66c2]/50 rounded-2xl transition-all group">
+                    <div class="w-12 h-12 rounded-full bg-slate-800 flex items-center justify-center text-[#0a66c2] text-2xl mb-3 group-hover:scale-110 transition-transform shadow-[0_0_15px_rgba(10,102,194,0.2)]"><i class="fab fa-linkedin-in"></i></div>
+                    <h4 class="text-white font-bold text-base">LinkedIn</h4>
+                    <p class="text-gray-400 text-xs mt-1">Professional network</p>
+                </a>
+                
+                <a href="tel:+918825688339" class="flex flex-col items-center text-center p-5 bg-slate-900/80 hover:bg-[#10b981]/10 border border-slate-800 hover:border-[#10b981]/50 rounded-2xl transition-all group">
+                    <div class="w-12 h-12 rounded-full bg-slate-800 flex items-center justify-center text-[#10b981] text-xl mb-3 group-hover:scale-110 transition-transform shadow-[0_0_15px_rgba(16,185,129,0.2)]"><i class="fas fa-phone-alt"></i></div>
+                    <h4 class="text-white font-bold text-base">Phone Call</h4>
+                    <p class="text-gray-400 text-xs mt-1">Urgent matters</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
     <!-- Scripts section -->
     <script>
         
-        // Dynamic profile image loader pulling the local user provided image
+        // --- Activating Modal Logic... ---
+        const modal = document.getElementById('contact-modal');
+        const openModalBtn = document.getElementById('open-contact-modal');
+        const closeModalBtns = document.querySelectorAll('.close-modal');
+        const modalContent = document.getElementById('modal-content');
+
+        if(openModalBtn && modal) {
+            openModalBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                modal.classList.remove('hidden');
+                // Trigger reflow to ensure CSS transitions execute
+                void modal.offsetWidth;
+                modal.classList.remove('opacity-0');
+                modalContent.classList.remove('scale-95');
+                modalContent.classList.add('scale-100');
+            });
+
+            closeModalBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    modal.classList.add('opacity-0');
+                    modalContent.classList.remove('scale-100');
+                    modalContent.classList.add('scale-95');
+                    setTimeout(() => {
+                        modal.classList.add('hidden');
+                    }, 300); // Wait for transition duration
+                });
+            });
+        }
+
+        // Dynamic profile image loader with a smart waterfall fallback
         const profileImageElement = document.getElementById('profile-pic');
         const footerImageElement = document.getElementById('footer-pic');
         const fallbackAvatarElement = document.getElementById('avatar-fallback');
@@ -712,6 +797,7 @@
         });
 
         loadProfileImage();
+
 
         // Mobile Menu Toggle
         const btn = document.getElementById('mobile-menu-btn');
@@ -762,7 +848,6 @@
             revealOnScroll.observe(el);
         });
 
-        
         const canvas = document.querySelector('#bg-canvas');
         
         // Scene Setup
@@ -777,6 +862,8 @@
         const renderer = new THREE.WebGLRenderer({ canvas, alpha: true, antialias: true });
         renderer.setSize(window.innerWidth, window.innerHeight);
         renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+
+        // --- Building 3D Background Environment (Particle Wave Variant) ---
         
         // Lighting for 3D geometric shapes
         const ambientLight = new THREE.AmbientLight(0xffffff, 0.7);
